@@ -27,7 +27,7 @@ do
     if [ $streaming -eq "0" ]
     then
       echo "Connection established. Starting stream in 60 seconds."
-      sleep 2
+      sleep 60
       ../FFMpeg/ffmpeg $stream_cmd $stream_url &
       streaming="1"
     fi
